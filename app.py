@@ -4,7 +4,7 @@ from pymessenger import Bot
 from utils import wit_response
 import pandas as pd
 
-dfquadros = pd.DataFrame(["Herois","Frases","Personalizados"])
+dfquadros = list["Herois","Frases","Personalizados"]
 VERIFY_TOKEN = "botchat"
 
 app = Flask(__name__)
