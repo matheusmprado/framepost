@@ -2,7 +2,6 @@ import os, sys
 from flask import Flask, request
 from pymessenger import Bot
 from utils import wit_response
-import pandas as pd
 
 dfQuadros = list["Herois","Frases","Personalizados"]
 VERIFY_TOKEN = "botchat"
