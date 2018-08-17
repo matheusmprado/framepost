@@ -48,7 +48,7 @@ def webhook():
                     
                     if entity == "quadros":
                         response = "Temos os seguintes modelos de quadros:%s" % entity
-                    if entity == "Bom dia":
+                    if entity == "bom_dia":
                         response = "Olá, bom dia! :D %s" % entity
                     if response == None:
                         response = "Desculpe, não entendi :/%s" % entity
