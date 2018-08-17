@@ -1,4 +1,4 @@
-'''from wit import Wit
+from wit import Wit
 
 access_token = "WSHEZ4HUV4LDDBHNQU6FKGBCJCXFFB6D"
 
@@ -18,4 +18,4 @@ def wit_response(message_text):
     
     
     
-#print (wit_response("Quais quadros vocês tem disponivel ?"))'''
+#print (wit_response("Quais quadros vocês tem disponivel ?"))
