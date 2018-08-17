@@ -6,6 +6,7 @@ itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0
 packaging==16.8
+pandas==0.23.3
 pymessenger==0.0.7.0
 PyMeta3==0.5.1
 pyparsing==2.2.0
