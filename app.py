@@ -47,7 +47,8 @@ def webhook():
                     
                     if entity == "quadros":
                         response = "Temos os seguintes modelos de quadros:"
-                        
+                    elif entity == "boa tarde":
+                        response = "Olá %s, boa tarde, tudo bem ? Com o que posso ajudar ?" %(recipient_id)
                     if response == None:
                         response = "Desculpe, não entendi :/"
                     bot.send_text_message(sender_id, response)
