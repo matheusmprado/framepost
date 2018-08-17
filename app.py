@@ -50,6 +50,10 @@ def webhook():
                         response = "Temos os seguintes modelos de quadros:%s" % entity
                     if entity == "bom_dia":
                         response = "Olá, bom dia! :D %s" % entity
+                    if entity == "comprar":
+                        response = "fico muito feliz que tu tem interesse em nossos quadros, entra em contato com a gente pelo whats 12 99193-6303 ou só aguardar que entraremos em contato o quanto antes <3 :D %s" % entity
+                    if entity == "preco":
+                        response = "Os valores dos nossos quadros vão de 39,99 o tamanho A4 e 49,99 o tamanho A3 %s" % entity
                     if response == None:
                         response = "Desculpe, não entendi :/%s" % entity
                         
