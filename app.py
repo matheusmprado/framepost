@@ -41,18 +41,6 @@ def webhook():
                         messaging_text = messaging_event["message"]["text"]
                     else:
                         messaging_text = "no text"
-                
-                   ''' #echo
-                    response = None
-                    entity, value = wit_response(messaging_text)
-                    
-                    if entity == "quadros":
-                        response = "Nossos modelos são esses:"
-                        
-                    if response == None:
-                        response = "Desculpe, não entendi :/"
-                    bot.send_text_message(sender_id, response)
-                    '''
     
     return "ok", 200
 
