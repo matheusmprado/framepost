@@ -1,7 +1,7 @@
 import os, sys
 from flask import Flask, request
 from pymessenger import Bot
-from ipynb.fs.full.utils import wit_response
+from utils import wit_response
 
 VERIFY_TOKEN = "botchat"
 
@@ -47,10 +47,10 @@ def webhook():
                     entity, value = wit_response(messaging_text)
                     
                     if entity == "quadros":
-                        response = "Nossos modelos s„o esses:"
+                        response = "Nossos modelos s√£o esses:"
                         
                     if response == None:
-                        response = "Desculpe, n„o entendi :/"
+                        response = "Desculpe, n√£o entendi :/"
                     bot.send_text_message(sender_id, response)
     
     return "ok", 200
