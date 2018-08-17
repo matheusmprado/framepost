@@ -45,14 +45,13 @@ def webhook():
                     response = None
                     entity, value = wit_response(messaging_text)
                     
-                    
-                    if entity == "quadros":
-                        response = "Temos os seguintes modelos de quadros:"
-                    if entity == "Bom dia" or "bom dia":
-                        response = "Olá, bom dia! :D "
-                        
                     if response == None:
                         response = "Desculpe, não entendi :/"
+                    elif entity == "quadros":
+                        response = "Temos os seguintes modelos de quadros:"
+                    elif entity == "Bom dia" or "bom dia":
+                        response = "Olá, bom dia! :D "
+                         
                     bot.send_text_message(sender_id, response)
 
     return "ok", 200
