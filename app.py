@@ -3,7 +3,6 @@ from flask import Flask, request
 from pymessenger import Bot
 from utils import wit_response
 
-dfQuadros = list["Herois","Frases","Personalizados"]
 VERIFY_TOKEN = "botchat"
 
 app = Flask(__name__)
@@ -47,7 +46,7 @@ def webhook():
                     entity, value = wit_response(messaging_text)
                     
                     if entity == "quadros":
-                        response = "Temos os seguintes modelos de quadros: %s" %(dfQuadros)
+                        response = "Temos os seguintes modelos de quadros:"
                         
                     if response == None:
                         response = "Desculpe, não entendi :/"
