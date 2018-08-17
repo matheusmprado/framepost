@@ -1,7 +1,7 @@
 import os, sys
 from flask import Flask, request
 from pymessenger import Bot
-from utils import wit_response
+#from utils import wit_response
 
 VERIFY_TOKEN = "botchat"
 
@@ -42,7 +42,7 @@ def webhook():
                     else:
                         messaging_text = "no text"
                 
-                    #echo
+                   ''' #echo
                     response = None
                     entity, value = wit_response(messaging_text)
                     
@@ -52,6 +52,7 @@ def webhook():
                     if response == None:
                         response = "Desculpe, não entendi :/"
                     bot.send_text_message(sender_id, response)
+                    '''
     
     return "ok", 200
 
