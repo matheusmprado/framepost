@@ -45,15 +45,22 @@ def webhook():
                     response = None
                     entity, value = wit_response(messaging_text)
                     
-                    
+                    #quadros
                     if entity == "quadros":
                         response = "Temos os seguintes modelos de quadros:%s" % entity
+                        
+                    #saudação    
                     if entity == "bom_dia":
-                        response = "Olá, bom dia! :D %s" % entity
+                        response = "Olá, bom dia! :D, com o que posso ajudar ?%s" % entity
+                        
+                    #comprar    
                     if entity == "comprar":
-                        response = "fico muito feliz que tu tem interesse em nossos quadros, entra em contato com a gente pelo whats 12 99193-6303 ou só aguardar que entraremos em contato o quanto antes <3 :D %s" % entity
+                        response = "fico muito feliz em saber que você tem interesse em nossos quadros, entre em contato com a gente pelo nosso Whats App 12 99193-6303 ou só aguardar que entraremos em contato o quanto antes <3 :D %s" % entity
+                    
+                    #preço
                     if entity == "preco":
                         response = "Os valores dos nossos quadros vão de 39,99 o tamanho A4 e 49,99 o tamanho A3 %s" % entity
+                    
                     if response == None:
                         response = "Desculpe, não entendi :/%s" % entity
                         
